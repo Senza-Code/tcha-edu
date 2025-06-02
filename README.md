@@ -1,5 +1,5 @@
 # T'Cha: We're Kinda Forever 
-**T'Cha is a learning discovery platform designed for curious children - especially those whose brilliance is often overlooked by traditional systems. 
+**T'Cha** is a learning discovery platform designed for curious children - especially those whose brilliance is often overlooked by traditional systems. 
 Whether a child lives with their grandparents, speaks multiple languages at home, has limited tech access, or learns in a way school doesn't always recognize - **T'Cha** helps them explore what excites them and express who they are, 
 The name "T'Cha" is inspired by *Titshala* (teacher in isiXhosa) and carries forward the spirit of global learners and caregivers who pass down knowledge with love, creativity, and resilience. 
 T'Cha begins as a simple tool: a guided journal (printable or digital) filled with reflective prompts, creative challenges, and story-building pages. As children interact with it, the begin to shape their own learning map - not one imposed by a system, but one grown from within. 
