@@ -50,7 +50,7 @@ T’Cha honors and protects that spark.
 ## Contact / Collaborate
 
 Want to help test, translate, adapt, or sponsor this project?  
-Reach out at: **ps3358@columbia.edu** (placeholder for when I get tcha.learning@gmail.com approved)
+Reach out at: **ps3358@columbia.edu**
 
 Or open an issue and say hello!
 
