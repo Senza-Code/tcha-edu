@@ -100,3 +100,18 @@ footer {
   cursor: not-allowed;
   pointer-events: none;
 }
+.educators {
+  margin-top: 3rem;
+  background-color: #fffbe6;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.educators ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.educators li {
+  margin-bottom: 0.75rem;
+}
