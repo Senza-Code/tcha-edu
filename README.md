@@ -24,7 +24,7 @@ T’Cha honors and protects that spark.
 ## Project Goals
 
 - ✅ Design and share a printable Week 1 Discovery Journal  
-- 🔲 Launch a lightweight web or mobile version for digital use  
+- ✅ Launch a lightweight web or mobile version for digital use  
 - 🔲 Pilot the project with kids, parents, and educators in underserved communities  
 - 🔲 Collect feedback from learners and caregivers to improve future versions  
 - 🔲 Share a free, open-source starter kit with community partners  
