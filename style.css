@@ -167,3 +167,41 @@ footer {
 .logo:hover {
   transform: scale(1.05) rotate(-1deg);
 }
+.header-flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #f2bb05;
+  color: white;
+  padding: 2rem;
+}
+
+.logo-img {
+  max-width: 120px;
+  height: auto;
+}
+
+.header-text {
+  flex-grow: 1;
+}
+
+.header-text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.tagline {
+  font-style: italic;
+  margin: 0.25rem 0 1rem;
+}
+
+nav a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
