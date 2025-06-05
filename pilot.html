@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>T'Cha Pilot Portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      text-align: center;
+      background-color: #f7faff;
+    }
+
+    .login-box {
+      max-width: 400px;
+      margin: 0 auto;
+      background: #fffef5;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    input {
+      padding: 0.5rem;
+      width: 80%;
+      margin-top: 1rem;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #portal-content {
+      margin-top: 2rem;
+    }
+
+    ul {
+      text-align: left;
+      max-width: 500px;
+      margin: 1rem auto;
+    }
+
+    a.button-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.4rem 1rem;
+      background-color: #6c63ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    a.button-link.disabled {
+      background-color: #bbb;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box" id="login-box">
+    <h2>Pilot Educator Portal</h2>
+    <p>Please enter the password to continue:</p>
+    <input type="password" id="password" placeholder="Enter access key" />
+    <br />
+    <button onclick="checkPassword()">Enter</button>
+    <p id="error" style="color: red; display: none;">Incorrect password. Try again.</p>
+  </div>
+
+  <div id="portal-content" class="hidden">
+    <h2>Welcome, Educator</h2>
+    <p>You’re one of the first to pilot T’Cha. We’re so excited to have you!</p>
+
+    <ul>
+      <li><a class="button-link" href="journal/tcha_week1_journal.pdf" target="_blank">Download Week 1: Discovery Journal</a></li>
+      <li><a class="button-link disabled" href="#">Week 2: Coming Soon</a></li>
+      <li><a class="button-link disabled" href="#">Pilot Feedback Form (Coming Soon)</a></li>
+      <li><a class="button-link disabled" href="#">Teaching Guide (Coming Soon)</a></li>
+    </ul>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("password").value;
+      const correctPassword = "vuvuzela"; // can be changed
+
+      if (password === correctPassword) {
+        document.getElementById("login-box").classList.add("hidden");
+        document.getElementById("portal-content").classList.remove("hidden");
+      } else {
+        document.getElementById("error").style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
