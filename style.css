@@ -7,20 +7,39 @@ body {
   line-height: 1.6;
 }
 
-header {
+.header-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
   background-color: #f2bb05;
   color: white;
-  padding: 1.5rem;
-  text-align: center;
+  padding: 2rem;
 }
 
-header h1 {
-  font-size: 2.8rem;
+.logo-img {
+  max-width: 140px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-img:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.header-text {
+  flex: 1;
+  min-width: 200px;
+}
+
+.header-text h1 {
+  font-size: 2.5rem;
   margin: 0;
 }
 
 .tagline {
-  margin: 0.5rem 0 1rem;
+  margin: 0.25rem 0 1rem;
   font-style: italic;
 }
 
@@ -30,7 +49,7 @@ nav {
 
 nav a {
   color: white;
-  margin: 0 1rem;
+  margin-right: 1rem;
   text-decoration: none;
   font-weight: bold;
 }
@@ -62,6 +81,12 @@ section {
   background-color: #1a1c2c;
 }
 
+.button.disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .footer-contact {
   border-top: 1px solid #ccc;
   padding-top: 2rem;
@@ -73,48 +98,18 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+
 .quests {
   margin-top: 3rem;
 }
 
 .quest-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
-.quest-card {
-  border: 1px solid #ccc;
-  padding: 1.5rem;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-}
-
-.quest-card h3 {
-  margin-top: 0;
-}
-
-.button.disabled {
-  background-color: #bbb;
-  cursor: not-allowed;
-  pointer-events: none;
-}
-.educators {
-  margin-top: 3rem;
-  background-color: #fffbe6;
-  padding: 2rem;
-  border-radius: 8px;
-}
-
-.educators ul {
-  margin-top: 1rem;
-  padding-left: 1.5rem;
-}
-
-.educators li {
-  margin-bottom: 0.75rem;
-}
 .quest-card {
   border: 1px solid #ddd;
   padding: 1.5rem;
@@ -131,12 +126,22 @@ footer {
   margin-bottom: 1rem;
 }
 
-.quest-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+.educators {
+  margin-top: 3rem;
+  background-color: #fffbe6;
+  padding: 2rem;
+  border-radius: 8px;
 }
+
+.educators ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.educators li {
+  margin-bottom: 0.75rem;
+}
+
 .tip-box {
   margin-top: 2rem;
   padding: 1rem;
@@ -155,53 +160,11 @@ footer {
   margin-top: 1rem;
   padding-left: 1.5rem;
 }
-.logo {
-  width: 140px;
-  margin: 0 auto 1rem;
-  display: block;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
 
-.logo:hover {
-  transform: scale(1.05) rotate(-1deg);
-}
-.header-flex {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  background-color: #f2bb05;
-  color: white;
-  padding: 2rem;
-}
-
-.logo-img {
-  max-width: 120px;
-  height: auto;
-}
-
-.header-text {
-  flex-grow: 1;
-}
-
-.header-text h1 {
-  font-size: 2.5rem;
-  margin: 0;
-}
-
-.tagline {
-  font-style: italic;
-  margin: 0.25rem 0 1rem;
-}
-
-nav a {
-  color: white;
-  margin-right: 1rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
+/* Mobile-friendly layout */
+@media (max-width: 600px) {
+  .header-flex {
+    flex-direction: column;
+    text-align: center;
+  }
 }
